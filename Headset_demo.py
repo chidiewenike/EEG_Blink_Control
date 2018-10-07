@@ -15,10 +15,12 @@ servo.write(0)
 while(True):
     f = urllib.request.urlopen(link)
     myfile = f.read()
-    counter += 1
+    full_rot_bool = True
     print (myfile)
-    if (counter%2 == 0):
+    if (full_rot_bool):
         servo.write(180)
+        full_rot_bool = False
 
-    elif (counter%2 == 1):
+    else:
         servo.write(0)
+        full_rot_bool = True

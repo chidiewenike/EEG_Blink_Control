@@ -1,0 +1,9 @@
+{
+  "name": "blink-to-led",
+  "version": "0.0.0",
+  "description": "BlinkToLED",
+  "main": "server.js",
+  "author": {
+    "name": "cej17"
+  }
+}
